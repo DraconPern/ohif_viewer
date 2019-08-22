@@ -3,15 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.50.3-alpha.0](https://github.com/OHIF/Viewers/compare/@ohif/core@0.50.2...@ohif/core@0.50.3-alpha.0) (2019-08-22)
-
-**Note:** Version bump only for package @ohif/core
-
-
-
-
-
-
 ## [0.50.2](https://github.com/OHIF/Viewers/compare/@ohif/core@0.50.1...@ohif/core@0.50.2) (2019-08-22)
 
 **Note:** Version bump only for package @ohif/core
