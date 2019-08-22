@@ -5,6 +5,9 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = (env, argv, { SRC_DIR, DIST_DIR }) => {
   return {
+    output: {
+      publicPath: process.env.PUBLIC_URL || ''
+    },
     entry: {
       bundle: `${SRC_DIR}/index.js`,
     },
