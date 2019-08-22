@@ -19,7 +19,8 @@ import { Bar, Container } from './components/LoadingBar/';
 import './OHIFStandaloneViewer.css';
 import './variables.css';
 import './theme-tide.css';
-
+import {utils } from '@ohif/core';
+import store from './store';
 // Dynamic Import Routes (CodeSplitting)
 // const IHEInvokeImageDisplay = asyncComponent(() =>
 //   import('./routes/IHEInvokeImageDisplay.js')
@@ -35,6 +36,30 @@ import './theme-tide.css';
 //
 
 const reload = () => window.location.reload();
+
+class SiteViewerRouting extends Component {
+  componentDidMount() {
+
+  }
+  render() {
+    // set the siteId here, kludge
+    var siteId = this.props.match.url.substr(6, this.props.match.url.indexOf('/',6) - 6);
+    console.log(this.props.servers);
+    var servers = this.props.servers.servers;
+    servers[0].wadoUriRoot = servers[0].wadoUriRoot.replace('%siteId', siteId);
+    servers[0].qidoRoot = servers[0].qidoRoot.replace('%siteId', siteId);
+    servers[0].wadoRoot = servers[0].wadoRoot.replace('%siteId', siteId);
+    //utils.addServers(this.props.servers, store);
+    return <ViewerRouting {...this.props}/>;
+  }
+}
+
+const ConnectedSiteViewerRouting = connect(
+  (state) => {
+    return {
+      servers: state.servers,
+    }}
+)(SiteViewerRouting);
 
 class OHIFStandaloneViewer extends Component {
   state = {
@@ -128,6 +153,10 @@ class OHIFStandaloneViewer extends Component {
       {
         path: '/viewer/:studyInstanceUids',
         Component: ViewerRouting,
+      },
+      {
+        path: '/site/:siteId/viewer/:studyInstanceUids',
+        Component: ConnectedSiteViewerRouting,
       },
       {
         path: '/study/:studyInstanceUids/series/:seriesInstanceUids',

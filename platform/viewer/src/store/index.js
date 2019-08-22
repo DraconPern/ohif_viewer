@@ -1,4 +1,4 @@
-import { applyMiddleware, combineReducers, createStore } from "redux";
+import { applyMiddleware, combineReducers, createStore, compose} from "redux";
 
 // import { createLogger } from 'redux-logger';
 import layoutReducers from "./layout/reducers.js";
@@ -15,13 +15,20 @@ reducers.ui = layoutReducers;
 reducers.oidc = oidcReducer;
 
 const rootReducer = combineReducers(reducers);
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const enhancer = composeEnhancers(
+  applyMiddleware(thunkMiddleware // Lets us dispatch() functions
+  // loggerMiddleware // neat middleware that logs actions
+  )
+  // other store enhancers if any
+);
+
 const store = createStore(
   rootReducer,
   localStorage.loadState(), // preloadedState
-  applyMiddleware(
-    thunkMiddleware // Lets us dispatch() functions
-    // loggerMiddleware // neat middleware that logs actions
-  )
+  enhancer
 );
 
 // When the store's preferences change,
