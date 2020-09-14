@@ -3823,11 +3823,6 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
-base64-js@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.2.1.tgz#a91947da1f4a516ea38e5b4ec0ec3773675e0886"
-  integrity sha512-dwVUVIXsBZXwTuwnXI9RK8sBmgq09NDHzyR9SAph9eqk76gKK2JSQmZARC2zRC81JC2QTtxD0ARU5qTS25gIGw==
-
 base64-js@^1.0.2:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.1.tgz#58ece8cb75dd07e71ed08c736abc5fac4dbf8df1"
@@ -4097,13 +4092,14 @@ browserslist@^4.0.0, browserslist@^4.1.0, browserslist@^4.5.2, browserslist@^4.6
     node-releases "^1.1.23"
 
 browserslist@^4.6.3, browserslist@^4.6.4, browserslist@^4.6.6:
-  version "4.6.6"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.6.6.tgz#6e4bf467cde520bc9dbdf3747dafa03531cec453"
-  integrity sha512-D2Nk3W9JL9Fp/gIcWei8LrERCS+eXu9AM5cfXA8WEZ84lFks+ARnZ0q/R69m2SV3Wjma83QDDPxsNKXUwdIsyA==
+  version "4.14.2"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.14.2.tgz#1b3cec458a1ba87588cc5e9be62f19b6d48813ce"
+  integrity sha512-HI4lPveGKUR0x2StIz+2FXfDk9SfVMrxn6PLh1JeGUwcuoDkdKZebWiyLRJ68iIPDpMI4JLVDf7S7XzslgWOhw==
   dependencies:
-    caniuse-lite "^1.0.30000984"
-    electron-to-chromium "^1.3.191"
-    node-releases "^1.1.25"
+    caniuse-lite "^1.0.30001125"
+    electron-to-chromium "^1.3.564"
+    escalade "^3.0.2"
+    node-releases "^1.1.61"
 
 bser@^2.0.0:
   version "2.1.0"
@@ -4404,10 +4400,10 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000974:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000974.tgz#b7afe14ee004e97ce6dc73e3f878290a12928ad8"
   integrity sha512-xc3rkNS/Zc3CmpMKuczWEdY2sZgx09BkAxfvkxlAEBTqcMHeL8QnPqhKse+5sRTi3nrw2pJwToD2WvKn1Uhvww==
 
-caniuse-lite@^1.0.30000955, caniuse-lite@^1.0.30000980, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30000984:
-  version "1.0.30000989"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000989.tgz#b9193e293ccf7e4426c5245134b8f2a56c0ac4b9"
-  integrity sha512-vrMcvSuMz16YY6GSVZ0dWDTJP8jqk3iFQ/Aq5iqblPwxSVVZI+zxDyTX0VPqtQsDnfdrBDcsmhgTEOh5R8Lbpw==
+caniuse-lite@^1.0.30000955, caniuse-lite@^1.0.30000980, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001125:
+  version "1.0.30001129"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001129.tgz#e6514b94c0ef50f98cf7476daa91228ddd2ef7bc"
+  integrity sha512-9945fTVKS810DZITpsAbuhQG7Lam0tEfVbZlsBaCFZaszepbryrArS05PWmJSBQ6mta+v9iz0pUIAbW1eBILIg==
 
 capitalize@^2.0.0:
   version "2.0.0"
@@ -5899,6 +5895,16 @@ dcmjs@^0.4.7:
     loglevelnext "^3.0.0"
     ndarray "^1.0.18"
 
+dcmjs@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/dcmjs/-/dcmjs-0.5.1.tgz#9c069081213b9946196b8faf83b79602db2e7582"
+  integrity sha512-r6/S4tHqhPqsuwbuFmxpah31IeJPKtEOEm2Uf+FW3P68a9V4liVZzKmF7QzoI8sZWgBxmmwdtVr47JC1jHldJw==
+  dependencies:
+    "@babel/polyfill" "^7.2.5"
+    "@babel/runtime" "^7.3.1"
+    loglevelnext "^3.0.0"
+    ndarray "^1.0.18"
+
 debug@*, debug@4.1.1, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
@@ -6700,10 +6706,10 @@ ejs@^2.6.1:
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.6.2.tgz#3a32c63d1cd16d11266cd4703b14fec4e74ab4f6"
   integrity sha512-PcW2a0tyTuPHz3tWyYqtK6r1fZ3gp+3Sop8Ph+ZYN81Ob5rwmbHEzaqs10N3BEsaGTkh/ooniXK+WwszGlc2+Q==
 
-electron-to-chromium@^1.3.122, electron-to-chromium@^1.3.191:
-  version "1.3.225"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.225.tgz#c6786475b5eb5f491ade01a78b82ba2c5bfdf72b"
-  integrity sha512-7W/L3jw7HYE+tUPbcVOGBmnSrlUmyZ/Uyg24QS7Vx0a9KodtNrN0r0Q/LyGHrcYMtw2rv7E49F/vTXwlV/fuaA==
+electron-to-chromium@^1.3.122, electron-to-chromium@^1.3.564:
+  version "1.3.567"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.567.tgz#7a404288952ac990e447a7a86470d460ea953b8f"
+  integrity sha512-1aKkw0Hha1Bw9JA5K5PT5eFXC/TXbkJvUfNSNEciPUMgSIsRJZM1hF2GUEAGZpAbgvd8En21EA+Lv820KOhvqA==
 
 electron-to-chromium@^1.3.150:
   version "1.3.224"
@@ -6905,6 +6911,11 @@ es6-symbol@^3.1.1, es6-symbol@~3.1.1:
   dependencies:
     d "1"
     es5-ext "~0.10.14"
+
+escalade@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.0.2.tgz#6a580d70edb87880f22b4c91d0d56078df6962c4"
+  integrity sha512-gPYAU37hYCUhW5euPeR+Y74F7BL+IBsV93j5cvGriSaD1aG6MGsqsV1yamRdrWrb2j3aiZvb0X+UBOWpx3JWtQ==
 
 escape-html@^1.0.3, escape-html@~1.0.3:
   version "1.0.3"
@@ -11250,15 +11261,15 @@ lodash.uniq@4.5.0, lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@4.17.11:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
-
-lodash@4.17.15, "lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.1.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@^4.3.0, lodash@~4.17.10:
+lodash@4.17.15:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+
+lodash@4.17.19, "lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.1.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@^4.3.0, lodash@~4.17.10:
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 log-symbols@2.2.0, log-symbols@^2.1.0, log-symbols@^2.2.0:
   version "2.2.0"
@@ -12306,7 +12317,12 @@ node-pre-gyp@^0.12.0:
     semver "^5.3.0"
     tar "^4"
 
-node-releases@^1.1.13, node-releases@^1.1.23, node-releases@^1.1.25:
+node-releases@^1.1.13, node-releases@^1.1.61:
+  version "1.1.61"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.61.tgz#707b0fca9ce4e11783612ba4a2fcba09047af16e"
+  integrity sha512-DD5vebQLg8jLCOzwupn954fbIiZht05DAZs0k2u8NStSe6h9XdsuIQL8hSRKYiU8WUQRznmSDrKGbv3ObOmC7g==
+
+node-releases@^1.1.23:
   version "1.1.27"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.27.tgz#b19ec8add2afe9a826a99dceccc516104c1edaf4"
   integrity sha512-9iXUqHKSGo6ph/tdXVbHFbhRVQln4ZDTIBJCzsa90HimnBYc5jw8RWYt4wBYFHehGyC3koIz5O4mb2fHrbPOuA==
@@ -14906,10 +14922,10 @@ react-transition-group@^4.1.1:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react-vtkjs-viewport@0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/react-vtkjs-viewport/-/react-vtkjs-viewport-0.0.9.tgz#da79aa66f52dcd731bcc5abd2587cbb120a25331"
-  integrity sha512-VwRCY2DPxWMhix4v3PAtdENp3U1p+Z9nKf1Ch5+KWRKF6fWeA+B2glYKMYNpPnP4bULzVz9iwV+Zeojt3gEibA==
+react-vtkjs-viewport@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/react-vtkjs-viewport/-/react-vtkjs-viewport-0.0.11.tgz#cedd993ca226502bf0417a3748a5b2f806522519"
+  integrity sha512-ttWw7bU/lL/nJuaaKdtAc8448vMJmlRQzpkpuP/J+3lTzIQbQPCPU40LqgONjr7LvL5++61N2GJ8m+PRgHyfxQ==
   dependencies:
     moment "^2.24.0"
 
@@ -18291,12 +18307,11 @@ void-elements@^2.0.1:
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
   integrity sha1-wGavtYK7HLQSjWDqkjkulNXp2+w=
 
-vtk.js@^8.11.0:
-  version "8.14.0"
-  resolved "https://registry.yarnpkg.com/vtk.js/-/vtk.js-8.14.0.tgz#c3be94c846a732a6f3e812a8a45a5dd3105939f2"
-  integrity sha512-/marh1LOJSxPYOc2j+GxiWUJt5EyFh9L2H+92vcgSn+AQ/FuaU7ovA2Q9BD0Sr2PJuIA7LlgxA6xOQzKHTJ1Yw==
+vtk.js@^9.5.0:
+  version "9.7.0"
+  resolved "https://registry.yarnpkg.com/vtk.js/-/vtk.js-9.7.0.tgz#763767607a958fba5c70754434612f3066bd96a0"
+  integrity sha512-4IJJr2slOY+W/GjUdjElg3ViJSt6IF+siIJ4FmqOYQeOdTKRVxVYb7dAYVOH3MyVz8Zs39DEwJHHhRK5hkjsjg==
   dependencies:
-    base64-js "1.2.1"
     blueimp-md5 "2.10.0"
     commander "2.11.0"
     gl-matrix "3.0.0"
