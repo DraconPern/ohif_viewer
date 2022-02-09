@@ -30,7 +30,7 @@ import OHIFStandaloneViewer from './OHIFStandaloneViewer';
 import { OidcProvider } from 'redux-oidc';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import WhiteLabellingContext from './WhiteLabellingContext';
 import { getActiveContexts } from './store/layout/selectors.js';
 import i18n from '@ohif/i18n';
